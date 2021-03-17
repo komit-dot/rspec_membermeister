@@ -17,7 +17,7 @@ RSpec.describe Auction, :type => :model do
 
   it "is not valid without a title" do
     subject.title = nil
-    expect(subject).to be_valid
+    expect(subject).to_not be_valid
   end
 
   it "is not valid without a description" do
